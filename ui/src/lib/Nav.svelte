@@ -1,9 +1,11 @@
+<!--
 <script>
     import {browser} from "$app/environment";
 
     let navItems = [{name: 'Upload', page: "/upload"},
         {name: 'View Files', page: '/view'},
         {name: 'Query', page: '/query'},
+        {name: 'Quiz', page: '/quiz'},
         {name: 'Contact', page: "/contact"}];
 
     let currently_selected = "";
@@ -12,6 +14,8 @@
     }
 
 </script>
+
+{@debug currently_selected}
 
 <nav class="bg-secondary-200">
     <ul>
@@ -55,4 +59,4 @@
             flex-direction: column;
         }
     }
-</style>
+</style>-->

@@ -1,7 +1,6 @@
 <script lang="ts">
     import {Button, Dropzone, Checkbox, Modal, Label, Textarea, Spinner} from "flowbite-svelte";
     import {cancelFile, indexFile, uploadFile} from "$lib/api.js";
-    import Nav from "$lib/Nav.svelte";
     import ButtonSecondary from "$lib/ButtonSecondary.svelte";
 
     let loading = false;
@@ -121,8 +120,6 @@
 
 </script>
 
-<Nav/>
-
 <div class="w-1/2 m-auto pt-5">
     <h1 class="pb-2 font-bold text-2xl">
         Upload File here
@@ -137,7 +134,8 @@
                         event.preventDefault();
                     }}
                     on:change={handleChange}
-                    multiple accept=".pdf;.txt">
+                    multiple={true}
+                    accept=".pdf, .txt">
                 <svg aria-hidden="true" class="mb-3 w-10 h-10 text-gray-400" fill="none" stroke="currentColor"
                      viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"

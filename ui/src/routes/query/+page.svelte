@@ -1,6 +1,5 @@
 <script lang="ts">
     import {deleteFile, loadFile, loadFiles, queryChunks} from "$lib/api.js";
-    import Nav from "$lib/Nav.svelte";
     import {
         Table,
         TableBody,
@@ -43,10 +42,6 @@
     }
 
 </script>
-
-
-<Nav></Nav>
-
 
 <div class="lg:w-3/4 xl:w-1/2 sm:w-full m-auto py-3">
     <div class="w-full py-3">
